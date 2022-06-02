@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hamming Code</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="mt-5">
+    <div class="container">
+      <h1 class="display-4">Hamming Kod Simülatörü</h1>
+      <hr />
+      <div class="paragraf text-center">
+        <p>
+          <h2 class="mb-3 mt-4">Başlıca Özellikleri</h2>
+          32 bite kadar veriler üzerinde Hamming Kodu fonksiyonu uygulanarak
+          veriler üzerinde işlem yapabilir.Belleğe yazılacak herhangi veri
+          için Hamming kodun ne olacağını hesaplayıp kullanıcıya yansıtır.<br /><br />Bellekten
+          okunan verilerde herhangi bir bit üzerinde (yapay olarak) hata oluşturmaya
+          izin verip yapay olarak oluşturulan bu hatayı (karşılaştırma
+          sonucunda ortaya çıkan) sendrom kelimesinden yorumlayıp hatalı bitin yerini tespit etmektir.<br /><br />
+          Hesaplanacak veri bitini giriniz...
+        </p>
+      </div>
+      <form class="w-75 mx-auto mt-5">
+        <div class="form-group">
+          <input
+            id="veri"
+            type="text"
+            id="name"
+            class="form-control"
+            placeholder="Hesaplanacak veriyi giriniz :"
+          />
+        </div>
+        <input
+          type="button"
+          value="Hesapla"
+          class="btn btn-danger w-75 mx-5"
+          onclick="hesapla()"
+        />
+      </form>
+    </div>
+    <div class="right" id="right">
+      <div class="top">
+        <h1 style="text-align: center; font-size: 35px" class="mt-3 lead">
+          Check Bitlerinin Bulunması
+        </h1>
+        <hr />
+        <p id="paragraf"></p>
+        <p id="tablo"></p>
+        <p id="ibra"></p>
+        <p id="ibra2"></p>
+        <p id="ibra3"></p>
+        <p id="ibra4"></p>
+        <p id="ibra45"></p>
+        <p id="ibra5"></p>
+      </div>
+      <div class="bottom mx-auto">
+        <h1 style="text-align: center" id="a">
+          Hatalı bitin konumunun bulunması
+        </h1>
+        <p id="pac"></p>
+
+        <p>Tek bitlik hatanın yerini tespit etme<br />Değiştimek istediğiniz bitin konumunu giriniz.</p>
+        <form class="w-75 mx-auto">
+          <div class="form-group">
+            <input
+              id="error"
+              type="text"
+              id="name"
+              class="form-control w-50 mx-auto "
+              placeholder="Değişitirilecek konumu giriniz:"
+            />
+          </div>
+          <input
+            id="calculate2"
+            type="button"
+            value="Değiştir"
+            class="btn btn-danger w-50 mx-auto"
+            onclick="pacific()"
+          />
+        </form>
+        <p id="pacific"></p>
+        <p id="pacific3"></p>
+        <p id="pacific35" class="w-50"></p>
+        <p id="pacific4"></p>
+        <p id="pacific5"></p>
+        <p id="pacific6"></p>
+        <p id="pacific7"></p>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
