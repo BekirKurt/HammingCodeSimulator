@@ -1,5 +1,10 @@
 # HammingCodeSimulator
 
+<h3>Başlıca ÖÖzellikleri</h3>
+
+32 bite kadar veriler üzerinde Hamming Kodu fonksiyonu uygulanarak veriler üzerinde işlem yapabilir.Belleğe yazılacak herhangi veri için Hamming kodun ne olacağını hesaplayıp kullanıcıya yansıtır.<br />
+Bellekten okunan verilerde herhangi bir bit üzerinde (yapay olarak) hata oluşturmaya izin verip yapay olarak oluşturulan bu hatayı (karşılaştırma sonucunda ortaya çıkan) sendrom kelimesinden yorumlayıp hatalı bitin yerini tespit etmektir.
+
 <a href="https://bekirkurt.github.io/HammingCodeSimulator/">İncelemek için tıklayınız</a>
 
 <hr>
